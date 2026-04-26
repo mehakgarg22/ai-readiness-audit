@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>AI Readiness Audit</h1>
+    <p>Check if your site is ready for LLMs and AI Agents.</p>
+    
+    <div class="search-box">
+        <input type="text" id="urlInput" placeholder="https://yourwebsite.com">
+        <button onclick="runAudit()">Analyze Site</button>
+    </div>
+
+    <div id="loading" class="hidden">Analyzing metadata and structure...</div>
+
+    <div id="result" class="hidden">
+        <div class="score-circle">
+            <span id="scoreValue">0</span>
+            <small>/100</small>
+        </div>
+        <h3>Critical Issues Found:</h3>
+        <ul id="issuesList"></ul>
+    </div>
+</div>
+
